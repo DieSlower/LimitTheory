@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" font-family="Segoe UI,Arial,sans-serif">
+<rect width="720" height="360" fill="#fff"/>
+<text x="16" y="28" font-size="18" font-weight="bold" fill="#222">Gamepad map (Ship panel)</text>
+<rect x="180" y="110" width="360" height="190" rx="70" fill="#d9dde3" stroke="#555" stroke-width="2"/>
+<rect x="200" y="86" width="80" height="22" rx="8" fill="#2b7fff"/><text x="240" y="102" font-size="12" fill="#fff" text-anchor="middle">LB</text>
+<rect x="440" y="86" width="80" height="22" rx="8" fill="#2b7fff"/><text x="480" y="102" font-size="12" fill="#fff" text-anchor="middle">RB</text>
+<rect x="205" y="56" width="70" height="26" rx="8" fill="#e8912d"/><text x="240" y="74" font-size="12" fill="#fff" text-anchor="middle">LT</text>
+<rect x="445" y="56" width="70" height="26" rx="8" fill="#e8912d"/><text x="480" y="74" font-size="12" fill="#fff" text-anchor="middle">RT</text>
+<circle cx="250" cy="175" r="28" fill="#2b7fff"/><text x="250" y="179" font-size="12" fill="#fff" text-anchor="middle">L stick</text>
+<circle cx="400" cy="235" r="28" fill="#2b7fff"/><text x="400" y="239" font-size="12" fill="#fff" text-anchor="middle">R stick</text>
+<circle cx="490" cy="150" r="14" fill="#2eaa5a"/><text x="490" y="154" font-size="11" fill="#fff" text-anchor="middle">Y</text>
+<circle cx="462" cy="175" r="14" fill="#2eaa5a"/><text x="462" y="179" font-size="11" fill="#fff" text-anchor="middle">X</text>
+<circle cx="518" cy="175" r="14" fill="#2eaa5a"/><text x="518" y="179" font-size="11" fill="#fff" text-anchor="middle">B</text>
+<circle cx="490" cy="200" r="14" fill="#bbb"/><text x="490" y="204" font-size="11" fill="#fff" text-anchor="middle">A</text>
+<path d="M320 215 h20 v-20 h20 v20 h20 v20 h-20 v20 h-20 v-20 h-20z" fill="#999"/>
+<text x="350" y="212" font-size="10" fill="#fff" text-anchor="middle">Up</text><text x="350" y="262" font-size="10" fill="#fff" text-anchor="middle">Down</text>
+<text x="60" y="150" font-size="12" fill="#222"><tspan font-weight="bold">L stick X / Y</tspan>: Strafe / thrust forward-back</text>
+<text x="60" y="100" font-size="12" fill="#222"><tspan font-weight="bold">LB / RB</tspan>: Roll left / right</text>
+<text x="60" y="70" font-size="12" fill="#222"><tspan font-weight="bold">LT</tspan>: Boost (analog)</text>
+<text x="560" y="70" font-size="12" fill="#222"><tspan font-weight="bold">RT</tspan>: Fire</text>
+<text x="400" y="320" font-size="12" fill="#222"><tspan font-weight="bold">R stick X / Y</tspan>: Yaw / pitch (Y inverted)</text>
+<text x="560" y="160" font-size="12" fill="#222"><tspan font-weight="bold">X</tspan>: Lock target</text>
+<text x="560" y="180" font-size="12" fill="#222"><tspan font-weight="bold">B</tspan>: Clear target</text>
+<text x="560" y="140" font-size="12" fill="#222"><tspan font-weight="bold">Y</tspan>: Dock</text>
+<text x="180" y="345" font-size="12" fill="#222"><tspan font-weight="bold">D-pad Up / Down</tspan>: Squad attack / scramble (bound, not wired)</text>
+</svg>

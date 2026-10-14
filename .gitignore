@@ -1,5 +1,26 @@
-bin/
-build/
-obj/
-log/
-screenshot/
+/bin/
+/build/
+/obj/
+/log/
+/screenshot/
+
+# IDE / tool state
+.idea/
+.vs/
+.vscode/
+.claude/
+graphify-out/
+
+# Build outputs and generated files
+*.pdb
+!/libphx/ext/**/*.pdb
+*.ilk
+*.exp
+*.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Runtime-generated
+*.log
+imgui.ini
