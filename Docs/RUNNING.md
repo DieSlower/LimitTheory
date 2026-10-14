@@ -82,6 +82,34 @@ Run any of them with `.\bin\lt64.exe <Name>`. Results of launching each one for 
 
 To make `TestImGui` / `Todo` run, create `screenshot\wp2.png` (any image) in the repo root.
 
+## 3a. Launcher scripts (`Launch\*.bat`)
+
+Double-click launchers for every app; each one changes to the repo root, checks that `bin\lt64.exe` exists and starts the app.
+
+| Launcher | Runs | Status |
+|---|---|---|
+| `Game.bat` | `LTheory` - the main game | Runs |
+| `Economy-Simulation.bat` | `TestEcon` | Runs |
+| `Physics-Sandbox.bat` | `PhysicsTest` | Runs |
+| `BSP-Mesh-Viewer.bat` | `BSPTest` | Runs |
+| `Coordinate-Test.bat` | `CoordTest` | Prints results, exits |
+| `Input-Test.bat` | `InputTest` | Runs |
+| `GUI-Demo-HmGui.bat` | `TestHmGui` | Runs |
+| `StrMap-Test.bat` | `TestStrMap` | Runs |
+| `GUI-Demo-ImGui.bat` | `TestImGui` | Needs `screenshot\wp2.png` |
+| `Todo-Checklist.bat` | `Todo` | Needs `screenshot\wp2.png` |
+| `Icon-Test.bat` | `TestIcon` | Known broken |
+| `Audio-Test-FMOD.bat` | `FMODTest` | Known broken |
+| `Texture-Generator.bat` | `GenTex2D` | Known broken (crash) |
+| `Launcher-Menu.bat` | Numbered menu of all of the above, plus Build / Clean | - |
+| `Build.bat` | Configure (first time) and build `RelWithDebInfo` | - |
+| `Clean.bat` | Delete `build\` and `bin\` (asks first) | - |
+
+## 3b. Is there a tech-tree / research screen, or a ship-generator viewer?
+
+* **Research / tech tree GUI: no.** The only traces are a *"Research"* checkbox in the `Todo` checklist app (`script/App/Todo.lua`) and a mention of a planned `ResearchControl` in the header comment of `script/Game/Controls/MasterControl.lua`. There is no technology data, no research logic and no UI. A new control panel would be the place to build it (recipe in [`Game/EXTENDING.md`](Game/EXTENDING.md) section 7).
+* **Procedural ship generation: no dedicated viewer.** The generators live in `script/Gen/` (`Ship.lua`, `ShipFighter.lua`, `ShipCapital.lua`, `ShapeLib/*`, `ShipLib/*`) and are used through `ShipType` when `System:spawnShip()` runs. You can *see* generated ships in `Game.bat` (the player ship and 100 escorts share one `ShipType`; a new seed per launch gives a new hull), `Physics-Sandbox.bat` and `Economy-Simulation.bat`. Mesh quality tools exist in `BSPTest`.
+
 ## 4. Mods
 
 **There is no mod system in this build.** Evidence from the repository:

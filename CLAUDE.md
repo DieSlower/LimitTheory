@@ -35,6 +35,7 @@ The cross-cutting design decisions are in [`Docs/SDDs/`](Docs/SDDs/), and the ro
 
 ## Build & Run
 
+- **Documentation:** index in [`Docs/README.md`](Docs/README.md) — build/run/controls, engine (`Docs/Engine/`) and game (`Docs/Game/`) docs.
 - **Layout:** the game (`ltheory`) is the repo root; the engine `libphx` is **vendored** into `libphx/` as ordinary tracked files (no submodule; the game's `CMakeLists.txt` pulls it in via `add_subdirectory`). Assets in `res/` are Git LFS.
 - **Toolchain:** MSVC (Visual Studio 2022 Community, x64), CMake 4.x (verified with 4.4.4), Python 3 (only for the `configure.py` helper), Git + Git LFS.
 - **Fresh checkout** (run once, from the repo root): `git lfs install`, `git clone https://github.com/DieSlower/LimitTheory.git`, then `git lfs pull` if assets are still pointers. If a checkout fails with LFS smudge errors, use `GIT_LFS_SKIP_SMUDGE=1 git checkout ...` and then `git lfs pull`.

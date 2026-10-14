@@ -38,7 +38,7 @@ The game has several **control panels**. Only one is active at a time; each rema
 
 ```mermaid
 flowchart TD
-    A([Game start]) --> U{Is the player's ship<br/>docked?}
+    A([Game start]) --> U{"Is the player's ship<br/>docked?"}
     U -- No --> S[Undocked control set]
     U -- Yes --> D[Docked control set]
 
@@ -50,8 +50,8 @@ flowchart TD
 
     SH -- "F near dockable" --> DK
     DK -- "F (Undock)" --> SH
-    SH <-- "` then 1 / 2 / 3 or click icon" --> CM
-    CM <-- "` then 1 / 2 / 3 or click icon" --> DB
+    SH <-->|"backtick, then 1 / 2 / 3 or click icon"| CM
+    CM <-->|"backtick, then 1 / 2 / 3 or click icon"| DB
 ```
 
 | Panel | Camera | Purpose | Switch with |
@@ -86,9 +86,9 @@ Panel switching rules:
 ```mermaid
 flowchart LR
     subgraph Input
-      W[W / S]-->TZ
-      AD[A / D]-->TX
-      QE[Q / E]-->R
+      W["W / S"]-->TZ
+      AD["A / D"]-->TX
+      QE["Q / E"]-->R
       MS[Mouse + Space]-->Y & P
       SH[Left Shift]-->B
     end
@@ -98,7 +98,7 @@ flowchart LR
     Y[Yaw] --> TC
     P[Pitch] --> TC
     B[Boost] --> TC
-    TC[ThrustController<br/>setThrust] --> TH[Thrusters / RigidBody]
+    TC["ThrustController<br/>setThrust"] --> TH["Thrusters / RigidBody"]
 ```
 
 Steering detail: without **Space** held, the mouse does *not* steer — the cursor is then free to aim turrets (see below).
